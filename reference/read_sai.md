@@ -41,7 +41,8 @@ that returns a list of 5 objects:
 ``` r
 
 # Load a Workspace
-file <- system.file("workspaces", "workspace_test.xml", package = "rjd3workspace")
+file <- system.file("workspaces", "workspace_test.xml",
+                    package = "rjd3workspace")
 # \donttest{
 jws <- jws_open(file)
 
@@ -211,6 +212,8 @@ read_sai(jsai = jsai1)
 #> Nb of forecasts: -1
 #> Nb of backcasts: 0
 #> Calendar sigma: NONE
+#> Mode X-11: UNKNOWN
+#> Bias: RATIO
 #> 
 #> Benchmarking
 #> Is enabled: No
@@ -271,6 +274,8 @@ read_sai(jsai = jsai1)
 #> Nb of forecasts: -1
 #> Nb of backcasts: 0
 #> Calendar sigma: NONE
+#> Mode X-11: UNKNOWN
+#> Bias: RATIO
 #> 
 #> Benchmarking
 #> Is enabled: No
@@ -334,6 +339,8 @@ read_sai(jsai = jsai1)
 #> Nb of forecasts: -1
 #> Nb of backcasts: 0
 #> Calendar sigma: NONE
+#> Mode X-11: UNKNOWN
+#> Bias: RATIO
 #> 
 #> Benchmarking
 #> Is enabled: No

@@ -1,7 +1,7 @@
 # Extract results from a SA-item
 
-`get_results()` extracts the results of a SA-item. `.jsai_results()`
-extracts specific output of the model of the SA-item. `.jsai_jresults()`
+`get_results()` extracts the results of a SA-item. `jsai_results()`
+extracts specific output of the model of the SA-item. `jsai_jresults()`
 extracts the Java object of the results of a SA-item.
 
 ## Usage
@@ -9,9 +9,9 @@ extracts the Java object of the results of a SA-item.
 ``` r
 get_results(jsai)
 
-.jsai_results(jsai, items = NULL)
+jsai_results(jsai, items = NULL)
 
-.jsai_jresults(jsai)
+jsai_jresults(jsai)
 ```
 
 ## Arguments

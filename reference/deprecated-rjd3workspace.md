@@ -33,7 +33,11 @@ Deprecated functions
 
 .jsa_results(jsa, items = NULL)
 
+.jsai_results(jsa, items = NULL)
+
 .jsa_jresults(jsa)
+
+.jsai_jresults(jsa)
 
 .jsa_metadata(jsa, key)
 
@@ -103,9 +107,15 @@ get_point_specification(jsai)
 
 ## Arguments
 
-- jmp, idx, jws, name, jsa, jsai, jsap, items, key, file, compute,
-  policy, period, start, end, info, modelling_context, jsap_from,
-  jsap_to, selected_sa_items, print_indications, spec:
+- jmp, idx, jws, name, jsa, jsai, jsap, items, key, file, compute:
+
+  Parameters.
+
+- policy, period, start, end, info, modelling_context, jsap_from:
+
+  Parameters.
+
+- jsap_to, selected_sa_items, print_indications, spec:
 
   Parameters.
 

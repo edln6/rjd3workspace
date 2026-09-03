@@ -1,8 +1,6 @@
 # Changelog
 
-## rjd3workspace 3.8.0
-
-CRAN release: 2026-07-17
+## rjd3workspace 3.8.0.9000
 
 All notable changes to this project will be documented in this file.
 
@@ -10,7 +8,51 @@ The format is based on [Keep a
 Changelog](https://keepachangelog.com/en/1.1.0/), and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-### [Unreleased](https://github.com/rjdverse/rjd3workspace/compare/v3.7.1...HEAD)
+### [Unreleased](https://github.com/rjdverse/rjd3workspace/compare/v3.8.0...HEAD)
+
+#### Changed
+
+- `add_variables` uses `complete_modelling_context` from {rjd3toolkit},
+  corrects wrong names and accepts `mts`, `JD3_TS`, `JD3_TSCOLLECTION`
+  and `JD3_DYNAMICTS` objects
+  [\#148](https://github.com/rjdverse/rjd3toolkit/issues/148)
+
+#### Deprecated
+
+- Function
+  [`.jsai_jresults()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md)
+  is deprecated. Please use function
+  [`jsai_jresults()`](https://rjdverse.github.io/rjd3workspace/reference/get-results.md)
+  instead. [\#88](https://github.com/rjdverse/rjd3workspace/issues/88)
+- Function
+  [`.jsai_results()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md)
+  is deprecated. Please use function
+  [`jsai_results()`](https://rjdverse.github.io/rjd3workspace/reference/get-results.md)
+  instead. [\#88](https://github.com/rjdverse/rjd3workspace/issues/88)
+
+#### Added
+
+- New `verbose` argument in `write_calendars` and document behavious
+  when the list of calendars is not named
+  [\#92](https://github.com/rjdverse/rjd3workspace/issues/92)
+- New message in `write_calendars` when the single calendar is not named
+  (and renamed in `"cal"`)
+  [\#101](https://github.com/rjdverse/rjd3workspace/issues/101)
+
+#### Fixed
+
+- Relative paths are accepted for
+  [`regarima_read_spec()`](https://rjdverse.github.io/rjd3workspace/reference/regarima_read_spec.md),
+  [`tramo_read_spec()`](https://rjdverse.github.io/rjd3workspace/reference/tramo_read_spec.md),
+  [`tramoseats_read_spec()`](https://rjdverse.github.io/rjd3workspace/reference/tramoseats_read_spec.md)
+  and
+  [`x13_read_spec()`](https://rjdverse.github.io/rjd3workspace/reference/x13_read_spec.md)
+  [\#91](https://github.com/rjdverse/rjd3workspace/issues/91)
+- `save_workspace` generates a warning when a workspace already exists
+  and `replace = FALSE` (the default)
+  [\#105](https://github.com/rjdverse/rjd3workspace/issues/105)
+
+### [3.8.0](https://github.com/rjdverse/rjd3workspace/compare/v3.7.1...v3.8.0) - 2026-07-17
 
 #### Fixed
 
@@ -160,8 +202,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 - Rename the argument `jsa` in `jsai` in
   [`read_sai()`](https://rjdverse.github.io/rjd3workspace/reference/read_sai.md),
-  [`.jsai_results()`](https://rjdverse.github.io/rjd3workspace/reference/get-results.md),
-  [`.jsai_jresults()`](https://rjdverse.github.io/rjd3workspace/reference/get-results.md),
+  [`.jsai_results()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md),
+  [`.jsai_jresults()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md),
   [`.jsai_name()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md),
   [`.jsai_metadata()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md),
   [`.jsai_ts_metadata()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md),
@@ -175,6 +217,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
   [`set_ts_metadata()`](https://rjdverse.github.io/rjd3workspace/reference/set_ts_metadata.md)
 - New JARS related to version
   [3.5.0](https://github.com/jdemetra/jdplus-main/releases/tag/v3.5.0)
+
+#### Fixed
+
+- [`set_reference_specification()`](https://rjdverse.github.io/rjd3workspace/reference/set_specification.md)
+  doesn’t change the SAI name
+  [\#55](https://github.com/rjdverse/rjd3workspace/issues/55)
 
 #### Deprecated
 
@@ -234,12 +282,12 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - Function
   [`.jsa_results()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md)
   is deprecated. Please use function
-  [`.jsai_results()`](https://rjdverse.github.io/rjd3workspace/reference/get-results.md)
+  [`.jsai_results()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md)
   instead.
 - Function
   [`.jsa_jresults()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md)
   is deprecated. Please use function
-  [`.jsai_jresults()`](https://rjdverse.github.io/rjd3workspace/reference/get-results.md)
+  [`.jsai_jresults()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md)
   instead.
 - Function
   [`.jsa_metadata()`](https://rjdverse.github.io/rjd3workspace/reference/deprecated-rjd3workspace.md)
