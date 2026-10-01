@@ -84,7 +84,7 @@ rws$processing$sap1$series_4
 #> [1] ""
 #> 
 #> $id
-#> [1] "fd2bc036-85d8-47b8-9757-40f849ba3e0c"
+#> [1] "3714c252-72d5-4192-a9e0-149f121967d7"
 #> 
 #> attr(,"class")
 #> [1] "JD3_TSMONIKER"
@@ -349,6 +349,6 @@ rws$processing$sap1$series_4
 
 # Writing the workspace
 save_workspace(jws, file.path(dir, "workspace.xml"))
-#> The workspace will be written to /tmp/Rtmp2cyrej/workspace.xml.
+#> The workspace will be written to /tmp/RtmpafwILF/workspace.xml.
 # }
 ```
